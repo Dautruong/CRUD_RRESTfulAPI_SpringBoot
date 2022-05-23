@@ -10,9 +10,9 @@ import org.springframework.stereotype.Service;
 @Service
 
 @Transactional
-public class userService {
+public class UserService {
 	@Autowired
-	private userRepository userRepo;
+	private UserRepository userRepo;
 	 public List<User> listAll() {
 	        return userRepo.findAll();
 	    }
